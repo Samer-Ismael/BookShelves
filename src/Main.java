@@ -16,46 +16,6 @@ public class Main {
         int space1 = space / 2;
         int space2 = space / 2;
 
-        if (space < 0){
-            shelves = -2;
-        }
-        while (totalBooks > 0 && space < 0) {
-
-            while (space1 <= -3 && book3 >= 1) {
-                space1 = space1 + 3;
-                book3--;
-                totalBooks--;
-            }
-            while (space1 <= -2 && book2 >= 1) {
-                space1 = space1 + 2;
-                book2--;
-                totalBooks--;
-            }
-            while (space1 <= -1 && book1 >= 1) {
-                space1 = space1 + 1;
-                book1--;
-                totalBooks--;
-            }
-            while (space2 <= -3 && book3 >= 1){
-                space2 = space2 + 3;
-                book3--;
-                totalBooks--;
-            }
-            while (space2 <= -2 && book2 >= 1){
-                space2 = space2 + 2;
-                book2--;
-                totalBooks--;
-            }
-            while (space2 <= -1 && book1 >= 1){
-                space2 = space2 + 1;
-                book1--;
-                totalBooks--;
-            }
-            if (totalBooks > 0){
-                shelves ++;
-                space1 = shelveSize - space1;
-            }
-        }
         if (shelveSize <= 2){
             book3 = 0;
         }
